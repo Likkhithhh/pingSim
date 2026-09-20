@@ -1,8 +1,17 @@
 # Ping Utility Simulator
 
+[![Python syntax check](https://github.com/Likkhithhh/pingSim/actions/workflows/python-syntax.yml/badge.svg)](https://github.com/Likkhithhh/pingSim/actions/workflows/python-syntax.yml)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-informational)
+![Networking](https://img.shields.io/badge/Topic-Networking-success)
+
 A Python networking-learning project that simulates ping behavior from both the command line and a desktop GUI.
 
-> This is a **simulation**. It does not send real ICMP packets over the network.
+> **Important:** this is a simulation. It does not send real ICMP packets.
+
+## Why this project matters
+
+The project turns networking concepts—latency, packet loss, sent/received counts, and basic availability statistics—into an interactive Python application.
 
 ## Features
 
@@ -12,32 +21,39 @@ A Python networking-learning project that simulates ping behavior from both the 
 - Sent/received/lost packet statistics
 - Tkinter desktop interface
 - Matplotlib latency graph
+- CLI and GUI implementations
 
-## Files
+## Architecture
 
-- `ping_sim.py` — command-line ping simulation
-- `ping_gui.py` — Tkinter GUI with a live latency graph
+```text
+Destination IP
+     ↓
+Ping simulation loop
+     ↓
+Random loss + latency model
+     ↓
+Packet statistics
+     ↓
+CLI output / GUI graph
+```
 
-## Requirements
-
-- Python 3
-- Matplotlib for the GUI version
-
-Install the GUI dependency:
+## Setup
 
 ```bash
-python3 -m pip install matplotlib
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
 ```
 
 ## Run
 
-Command-line simulation:
+CLI:
 
 ```bash
 python3 ping_sim.py
 ```
 
-GUI simulation:
+GUI:
 
 ```bash
 python3 ping_gui.py
@@ -45,4 +61,15 @@ python3 ping_gui.py
 
 ## Learning focus
 
-This project demonstrates packet-loss concepts, latency visualization, basic networking statistics, Python GUI development, and event-driven application design.
+- Packet loss and latency concepts
+- Networking statistics
+- Python GUI development
+- Matplotlib visualization
+- Event-driven application design
+
+## Roadmap
+
+- Add a real ICMP mode using the system `ping` command
+- Add deterministic simulation parameters
+- Add automated unit tests
+- Export latency results to CSV
