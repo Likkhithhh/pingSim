@@ -73,3 +73,18 @@ python3 ping_gui.py
 - Add deterministic simulation parameters
 - Add automated unit tests
 - Export latency results to CSV
+
+
+---
+
+## Portfolio navigation
+
+Explore the rest of my GitHub portfolio:
+
+- [QOS-VIDEO](https://github.com/Likkhithhh/QOS-VIDEO) — machine-learning experiments for video-streaming QoS optimization
+- [weatherAPP](https://github.com/Likkhithhh/weatherAPP) — browser weather dashboard using public APIs
+- [pingSim](https://github.com/Likkhithhh/pingSim) — Python networking and latency simulator
+- [lexgen](https://github.com/Likkhithhh/lexgen) — educational lexer-generator and compiler-design project
+- [ATTENDENCEBOT](https://github.com/Likkhithhh/ATTENDENCEBOT) — face-recognition reference work for an attendance-system portfolio project
+
+**GitHub:** [Likkhithhh](https://github.com/Likkhithhh)
